@@ -1,6 +1,7 @@
 /*
 !.gitignore
 !DoSome
+!.idea
 *.iml
 .gradle
 /local.properties
