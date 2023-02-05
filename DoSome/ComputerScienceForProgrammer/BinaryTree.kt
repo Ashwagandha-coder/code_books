@@ -46,6 +46,30 @@ class BinaryTree {
 
     }
 
+
+    fun obtain(value: Int): Boolean {
+
+        var current = root
+        if (root?.getValue() == value) return true
+
+        while (true) {
+
+            if (current?.getValue() == value) return true
+
+            if (value < current?.getValue()!!) {
+
+                current = current.isLeft()
+            } else {
+                current = current.isRight()
+            }
+
+            if (current == null) return false
+
+        }
+
+
+    }
+
     override fun toString(): String {
         return "BinaryTree(root=$root)"
     }
@@ -75,7 +99,6 @@ class BinaryTree {
         fun isLeft() = left
 
         fun isRight() = right
-
 
 
         override fun toString(): String {
