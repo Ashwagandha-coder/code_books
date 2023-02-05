@@ -78,11 +78,17 @@ class OneLinkList<T>() : MyList<T> {
 
     override fun getElem(elem: T): T {
 
+        /**
+         Используем size
+         */
 
     }
 
     override fun obtain(elem: T) {
 
+        /**
+        Используем size
+         */
 
     }
 

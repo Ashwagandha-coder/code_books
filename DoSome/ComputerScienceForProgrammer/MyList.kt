@@ -4,7 +4,7 @@ interface MyList<E> {
 
     fun remove(elem: E): Boolean
 
-    fun getElem(elem: E)
+    fun getElem(index: E): E
 
     fun obtain(elem: E)
 
