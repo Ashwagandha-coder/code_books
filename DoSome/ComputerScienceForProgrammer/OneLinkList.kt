@@ -48,14 +48,15 @@ class OneLinkList<T>() : MyList<T> {
     }
 
 
-
     override fun remove(elem: T): Boolean {
 
         var save: Node<T>?
         var bufferNode: Node<T>? = null
 
         if (head?.elem == elem) {
-            //linkage(head?.next)
+            save = head.node()
+            head = head.next
+            save = null
             return true
         }
 
@@ -66,7 +67,7 @@ class OneLinkList<T>() : MyList<T> {
             current = current?.next
         }
 
-        println(bufferNode?.elem)
+
         bufferNode?.next = current?.next
         current?.next = null
         current = null
@@ -75,12 +76,13 @@ class OneLinkList<T>() : MyList<T> {
     }
 
 
+    override fun getElem(elem: T): T {
 
-    override fun getElem(elem: T) {
 
     }
 
     override fun obtain(elem: T) {
+
 
     }
 
