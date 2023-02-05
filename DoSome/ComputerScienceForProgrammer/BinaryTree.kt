@@ -2,7 +2,6 @@ class BinaryTree {
 
     private var root: Node? = null
 
-
     fun add(value: Int) {
 
         if (root == null) {
